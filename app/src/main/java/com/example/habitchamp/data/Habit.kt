@@ -16,5 +16,5 @@ data class Habit(
     val name: String,
     val frequencyPerPeriod: Int = 0,
     val period: Period,
-    val lastCompleted: LocalDate? = null
+    //val lastCompleted: LocalDate? = null Removed because its not enough to know if multiple competions were done per time period
 )
