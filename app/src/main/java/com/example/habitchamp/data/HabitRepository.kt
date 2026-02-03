@@ -1,8 +1,11 @@
 package com.example.habitchamp.data
 
 import java.time.LocalDate
+import javax.inject.Inject
+import javax.inject.Singleton
 
-class HabitRepository(
+@Singleton
+class HabitRepository @Inject constructor(
     private val habitDao: HabitDao,
     private val completionDao: HabitCompletionDao
 ) {
